@@ -19,6 +19,7 @@ export default class Counter implements Contract {
       bounce: false
     });
   }
+  //test input for commit
 
   async getCounter(provider: ContractProvider) {
     const { stack } = await provider.get("counter", []);
