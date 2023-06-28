@@ -19,12 +19,12 @@ describe("Counter tests", () => {
     blockchain = await Blockchain.create();
     wallet1 = await blockchain.treasury("user1");
 
-    blockchain.verbosity = {
-        print: true,
-        blockchainLogs: true,
-        vmLogs: "vm_logs_full",
-        debugLogs: true,
-      }
+    // blockchain.verbosity = {
+    //     print: true,
+    //     blockchainLogs: true,
+    //     vmLogs: "vm_logs_full",
+    //     debugLogs: true,
+    //   }
 
     // deploy counter
     counterContract = blockchain.openContract(counter);
